@@ -1,0 +1,96 @@
+<body>
+
+    <h1>Art Gallery</h1>
+  <img src=" https://images.unsplash.com/photo-1580980407668-6bb45a674180?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzJ8fGJpcmR8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" width="600px" height="550px" id="myimage">
+</BR></BR>
+    <input type="button" value="PREVIOUS" id="1">
+    <input type="button" value="NEXT" id="2">
+
+    <div>GOD LOVED THE BIRDS AND INVENTED TREES.MAN LOVED THE BIRDS AND INVENTED CAGES.</div>
+
+</body>
+<script>
+document.getElementById("1") .addEventListener("click", pre);
+ document.getElementById("2") .addEventListener("click", nex);
+ var allimg=[
+            "https://images.unsplash.com/photo-1555169062-013468b47731?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
+                "https://images.unsplash.com/photo-1452570053594-1b985d6ea890?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8OHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
+                "https://images.unsplash.com/photo-1497206365907-f5e630693df0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTF8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+                "https://images.unsplash.com/photo-1551085254-e96b210db58a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
+                "https://images.unsplash.com/photo-1520552159191-e28a1d9f0d7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NDJ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+                "https://images.unsplash.com/photo-1556029066-e4e01eb04355?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Njl8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+                "https://images.unsplash.com/photo-1532007195987-bb4ddeaf052d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTExfHxiaXJkfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+                "https://images.unsplash.com/photo-1587011158961-5f27e4578293?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHBlYWNvY2t8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"];
+ 
+ var c = 0;
+
+function pre()
+
+{
+
+c--;
+
+if (c == -1)
+{
+c = 0;
+}
+
+var i = document.getElementById("myimage");
+ i.setAttribute("src", allimg[c]);
+
+}
+
+function nex()
+
+{
+
+c++;
+
+if (c == allimg.length)
+
+{
+c = allimg.length - 1;
+}
+
+var i = document.getElementById("myimage");
+
+i.setAttribute("src", allimg[c]);
+
+}
+
+</script>
+<style>
+    div{
+        position: absolute;
+        top: 100px;right: 200px;
+         color:palevioletred;
+        width: 500px;
+        height: 40px;
+        font-weight:bolder ;
+        font-size: xx-large;
+        
+
+    }
+       
+    
+    input{
+        background-color: rgb(224, 140, 31);
+        font-weight: bold;
+        
+       
+    }
+h1{
+    font-style: italic;
+    text-align: center;
+    background-color:chocolate;
+    
+}
+body{
+    background-color:floralwhite;
+}
+img{
+    border:solid rgba(197, 179, 14, 0.918) 3px;
+    padding:auto;
+}
+
+</style>

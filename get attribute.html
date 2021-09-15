@@ -1,0 +1,21 @@
+<html>
+    <style>
+        .one{color:rgb(1, 240, 148);
+            background-color:darkgray;
+            text-align: center;
+    
+        }
+    </style>
+<body>
+    <h1 title="heading" class="one">web development</h1>
+    <button>get attribute</button>
+ <script>
+ document.getElementsByTagName("button")[0].addEventListener("click",fun)
+ function fun()
+ {
+  var a=document.getElementsByTagName("h1")[0].getAttribute("title");
+  alert(a)
+ }
+    </script>
+</body>
+</html>

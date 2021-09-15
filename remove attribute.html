@@ -1,0 +1,23 @@
+<html>
+<body>
+    <h1 title="heading" class="one">web development</h1>
+    <button>remove attribute</button>
+
+    <script>
+document.getElementsByTagName("button")[0].addEventListener("click",fun)
+function fun()
+{
+    document.getElementsByTagName("h1")[0].removeAttribute("class");
+    document.getElementsByTagName("h1")[0].removeAttribute("title");
+}
+    </script>
+</body>
+<style>
+    .one{color:rgb(1, 240, 148);
+        background-color:darkgray;
+        text-align: center;
+
+    }
+</style>
+
+</html>
